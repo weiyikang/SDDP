@@ -176,7 +176,7 @@ for ratio=6:6
     acc_avg = mean(acc,1);
     std_acc = std(acc,1);
     path = [dataset,num2str(ratio),'mfa'];
-    save(path,'acc_avg','std_acc');
+%     save(path,'acc_avg','std_acc');
     plot(1:maxDim,acc_avg);
     
     [maxAcc, idx] = max(acc_avg)
